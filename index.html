@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aboutme - NOXXA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome-screen">
+    <h1>🌌 Welcome to Galaxy Noxxa</h1>
+    <button onclick="enterSite()">🚀 Click to Menu</button>
+  </div>
+
+  <!-- Halaman Utama -->
+  <div class="page" id="home">
+    <img src="https://files.catbox.moe/fs9oh0.jpg" alt="Logo" class="logo floating" />
+    <audio id="bg-music" src="https://files.catbox.moe/8v93nb.mp3"></audio>
+    <button onclick="toggleMusic()">Play Music</button>
+
+    <div id="music-player" style="display:none; margin-top:10px; text-align:center;">
+      <p><strong>Judul Lagu:</strong> DJ WUT WUT WUT</p>
+      <p><strong>Penyanyi:</strong> Rizky Febian</p>
+      <input type="range" id="seek-bar" value="0" style="width:80%;" />
+      <p><span id="current-time">0:00</span> / <span id="duration">0:00</span></p>
+      <button onclick="stopMusic()">Stop</button>
+    </div>
+
+    <p id="typed-text"></p>
+
+    <div style="display: flex; gap: 20px; justify-content: center; align-items: center; margin: 10px 0;">
+      <a href="https://t.me/noxxasoloo" target="_blank">
+        <img src="https://files.catbox.moe/xltp58.jpg" alt="Telegram" class="icon floating" />
+      </a>
+      <a href="https://wa.me/6283167371689" target="_blank">
+        <img src="https://files.catbox.moe/ju5m1g.jpg" alt="WhatsApp" class="icon floating" />
+      </a>
+    </div>
+
+    <p><strong>Bahasa Pemrograman yang Dikuasai:</strong></p>
+    <div style="display: flex; gap: 20px; justify-content: center; align-items: center;">
+      <img src="https://files.catbox.moe/jiw6da.jpg" alt="JavaScript" class="icon floating" />
+      <img src="https://files.catbox.moe/zlyx85.jpg" alt="CSS" class="icon floating" />
+    </div>
+  </div>
+
+    <!-- PARTNER PRIBADI -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="PARTNER PRIBADI" class="floating" />
+      <p><strong>PARTNER PRIBADI</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- GET PARTNER SCRIPT ETERNAL GALAXY</li>
+        <li>- GET SCRIPT ETERNAL GALAXY NO ENC VERSION SEBELUMNYA</li>
+        <li>- GET SCRIPT DATABASE </li>
+        <li>- GET SCRIPT OBF NO ENC</li>
+        <li>- GET BANYAK BASE BOT</li>
+        <li>- GET FUNCTION NEW SETIAP UPDATE</li>
+        <li>- GET ADMIN ROOM</li>
+        <li>- GET PROMOTED</li>
+        <li>- DI BANTU NAIK NAMA</li>
+        <li>- DI BANTU FIX ERROR KALO GAK SIBUK</li>
+        <li>- FULL PENGAJARAN</li>
+        <li>- FULL TUTOR</li>
+      </ul>
+      <p>Harga: Rp 50.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Room</button></a>
+    </div>
+
+    <!-- JASA BUAT SCRIPT -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="JASA BUAT SCRIPT" class="floating" />
+      <p><strong>JASA BUAT SCRIPT</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- BASE DARI GUA</li>
+        <li>- BASE KEREN ANTI FREE AND PASARAN</li>
+        <li>- FUNCTION DARI GUA</li>
+        <li>- FUNCTION NEW ANTI MULUNG</li>
+        <li>- AUTO JADI DEVELOPER</li>
+        <li>- GUA YANG KERJAIN LU TINGGAL REQ AJA</li>
+      </ul>
+      <p>Harga: Rp 70.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Room</button></a>
+    </div>
+
+    <!-- JASA BUAT WEB SHOP -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="JASA BUAT WEB SHOP" class="floating" />
+      <p><strong>JASA BUAT WEB SHOP</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- BOLEH REQ LIST JUALAN</li>
+        <li>- LIST JUALAN MAXIMAL 7</li>
+        <li>- PENGERJAAN CEPAT</li>
+        <li>- PENGERJAAN 30 - 60 MENIT</li>
+        <li>- DI KASIH HTML NYA</li>
+        <li>- GUA YANG KERJAIN LU TINGGAL REQ AJA</li>
+      </ul>
+      <p>Harga: Rp 30.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Room</button></a>
+    </div>
+
+    <!-- FIXED ERROR -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="JASA FIXED" class="floating" />
+      <p><strong>JASA FIXED</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- DILIHAT DENGAN ERROR NYA</li>
+      </ul>
+      <p>Harga: Rp 10.000 - 50.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Room</button></a>
+    </div>
+
+    <!-- PARTNER GALAXY -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="PARTNER GALAXY" class="floating" />
+      <p><strong>PARTNER GALAXY</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- GET MODERATOR SC ETERNAL GALAXY</li>
+        <li>- GET SC ETERNAL GALAXY NO ENC FULL UPDATE</li>
+        <li>- GET SC DATABASE</li>
+        <li>- GET SCRIPT GALAXY MD VIA TELE BISA JUAL SC/PAKE</li>
+        <li>- GET SC OBF NO ENC</li>
+        <li>- GET FUNCTION SETIAP UPDATE</li>
+        <li>- GET PEMBELAJARAN MENGENAI TENTANG SCRIPT</li>
+        <li>- DI KASIH TUTORIAL</li>
+        <li>- DI BANTU FIX SC LU KALO NGGAK SIBUK</li>
+        <li>- GET ADMIN CHANNEL </li>
+        <li>- GET ADMIN ROOM PUBLIC</li>
+        <li>- GET PROMOTED</li>
+        <li>- DI BANTU NAIK NAMA</li>
+        <li>- DI BANTU TERUS - TERUSAN</li>
+        <li>- BOLEH MINTA BUATKAN PLUGIN/CASE YANG LU MAU</li>
+      </ul>
+      <p>Harga: Rp 80.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Room</button></a>
+    </div>
+
+    <!-- SCRIPT ETERNAL GALAXY -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/kb57hi.jpg" alt="SCRIPT ETERNAL GALAXY" class="floating" />
+      <p><strong>SCRIPT ETERNAL GALAXY</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- FREE UPDATE PERMANEN</li>
+        <li>- BISA OPEN MURBUG</li>
+        <li>- BISA OPEN JASA BUG</li>
+        <li>- BISA OPEN OWNER BUG</li>
+        <li>- BISA OPEN ADMIN BUG</li>
+        <li>- ADA FITUR MD NYA</li>
+      </ul>
+      <p>Harga: Rp 50.000</p>
+      <a href="https://t.me/noxxasoloo" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/roompublicnoxaa" target="_blank"><button>Room</button></a>
+    </div>
+      <!-- Tambahkan produk lainnya di sini -->
+    </div>
+    <nav style="margin-top: 20px;">
+      <button onclick="scrollToHome()">Back To Menu</button>
+    </nav>
+  </div>
+
+    <!-- Profile Section -->
+    <div class="profile-wrapper">
+      <img class="profile-img" src="https://files.catbox.moe/kb57hi.jpg" alt="noxxasolo Profile">
+      <h2>( ❄️ ) Olá Eu sou noxxa</h2>
+      <p>私は ─ WhatsApp テムを破壊しようとしているボットです。賢くご利用ください。</p>
+      <p><strong>🧠 Tentang Saya (ID):</strong><br> Saya adalah seorang developer script bug WhatsApp yang berfokus pada pengembangan dan eksploitasi sistem WhatsApp. Saya juga spesialis keamanan dalam pembuatan dan pelindungan script WhatsApp — baik untuk sistem berbasis Telegram maupun langsung via WhatsApp.</p>
+      <p><strong>🧠 About Me (EN):</strong><br> I am a WhatsApp bug script developer focused on system exploitation and security, including creating and securing WA bots integrated with Telegram or direct WA use.</p>
+      <div class="link-buttons">
+        <a href="https://t.me/noxxasoloo" target="_blank" class="btn-link">
+          <img src="https://files.catbox.moe/kb57hi.jpg" alt="Telegram">Telegram
+        </a>
+        <a href="https://t.me/alltestinoxxa" target="_blank" class="btn-link">
+          <img src="https://files.catbox.moe/evvzsi.jpg" alt="Channel">Channel
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">© 2025 Web Shop — Powered by noxxasolo</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
